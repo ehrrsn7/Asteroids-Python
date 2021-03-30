@@ -1,0 +1,161 @@
+
+# screen variables
+SCREEN_WIDTH                    = 800
+SCREEN_HEIGHT                   = 600
+SCREEN_COLOR_LIGHT              = arcade.color.WHITE
+SCREEN_COLOR_DARK               = arcade.color.BLACK
+
+# on-screen text variables
+TEXT_NORMAL_FONT_SIZE           = 12
+TEXT_NORMAL_COLOR_LIGHT         = arcade.color.NAVY_BLUE
+TEXT_NORMAL_COLOR_DARK          = arcade.color.WHITE
+
+# score variables
+SCORE_INIT                      = 0
+SCORE_X                         = 10
+SCORE_Y                         = SCREEN_HEIGHT - 20
+
+# level variables
+LEVEL_COLOR_LIGHT               = arcade.color.NAVY_BLUE
+LEVEL_COLOR_DARK                = arcade.color.WHITE
+LEVEL_INIT                      = 0
+LEVEL_X                         = SCREEN_WIDTH  - 65
+LEVEL_Y                         = SCREEN_HEIGHT - 20
+LEVEL_FONT_SIZE                 = 12
+
+# ship variables
+SHIP_X_INIT                     = SCREEN_HEIGHT / 2
+SHIP_Y_INIT                     = SCREEN_WIDTH  / 2
+SHIP_RADIUS                     = 30
+SHIP_ANGLE_ROTATE_AMOUNT        = 100
+SHIP_THRUST_ACCELERATE_AMOUNT   = 0.1
+SHIP_ANGLE_INIT                 = 0
+SHIP_TEXTURE_FILENAME           = "resources/images/playerShip1_orange.png"
+SHIP_TEXTURE                    = arcade.load_texture(SHIP_TEXTURE_FILENAME)
+SHIP_TEXTURE_SCALE              = 1
+SHIP_TEXTURE_ALPHA              = 255
+
+# rifle variables
+RIFLE_WIDTH                     = 100
+RIFLE_HEIGHT                    = 20
+RIFLE_X_INIT                    = 0
+RIFLE_Y_INIT                    = 0
+RIFLE_ANGLE_INIT                = 45
+RIFLE_COLOR_LIGHT               = arcade.color.DARK_RED
+RIFLE_COLOR_DARK                = arcade.color.LIGHT_CRIMSON
+
+# bullet variables
+BULLET_RADIUS                   = 30
+BULLET_SPEED                    = 10
+BULLET_TIMER                    = 60
+BULLET_COLOR_LIGHT              = arcade.color.BLACK_OLIVE
+BULLET_COLOR_DARK               = arcade.color.LIGHT_GRAY
+BULLET_TEXURE_FILENAME          = "resources/images/laser_bullet.png"
+BULLET_TEXURE                   = arcade.load_texture(BULLET_TEXURE_FILENAME)
+BULLET_TEXTURE_SCALE            = 1
+BULLET_TEXTURE_ALPHA            = 255
+# BULLET_X_INIT                   = 5
+# BULLET_Y_INIT                   = 5
+
+# rock variables
+ROCK_DEFAULT_RADIUS             = 15
+ROCK_DEFAULT_SPEED              = 1.5
+ROCK_DEFAULT_SPIN               = 1
+ROCK_DEFAULT_POINTS_AWARDED     = 1
+ROCK_DEFAULT_SCALE              = 1
+ROCK_DEFAULT_ANGLE              = 0
+ROCK_DEFAULT_ALPHA              = 255
+ROCK_DEFAULT_TEXTURE_FILENAME   = "resources/images/meteorGrey_big1.png"
+ROCK_DEFAULT_TEXTURE            = arcade.load_texture(ROCK_DEFAULT_TEXTURE_FILENAME)
+# big rock variables
+ROCK_BIG_RADIUS                 = ROCK_DEFAULT_RADIUS
+ROCK_BIG_SPEED                  = ROCK_DEFAULT_SPEED
+ROCK_BIG_SPIN                   = ROCK_DEFAULT_SPIN
+ROCK_BIG_TEXURE_FILENAME        = ROCK_DEFAULT_TEXTURE_FILENAME
+ROCK_BIG_TEXURE                 = arcade.load_texture(ROCK_BIG_TEXURE_FILENAME)
+ROCK_BIG_TEXTURE_SCALE          = ROCK_DEFAULT_SCALE
+ROCK_BIG_TEXTURE_ALPHA          = ROCK_DEFAULT_ALPHA
+# medium rock variables
+ROCK_MEDIUM_RADIUS              = 5
+ROCK_MEDIUM_SPEED               = ROCK_DEFAULT_SPEED
+ROCK_MEDIUM_SPIN                = -2
+ROCK_MEDIUM_TEXURE_FILENAME     = "resources/images/meteorGrey_med1.png"
+ROCK_MEDIUM_TEXURE              = arcade.load_texture(ROCK_MEDIUM_TEXURE_FILENAME)
+ROCK_MEDIUM_TEXTURE_SCALE       = 1
+ROCK_MEDIUM_TEXTURE_ALPHA       = 255
+# small rock variables
+ROCK_SMALL_RADIUS               = 2
+ROCK_SMALL_SPEED                = ROCK_DEFAULT_SPEED
+ROCK_SMALL_SPIN                 = 5
+ROCK_SMALL_TEXURE_FILENAME      = "resources/images/meteorGrey_small1.png"
+ROCK_SMALL_TEXURE               = arcade.load_texture(ROCK_SMALL_TEXURE_FILENAME)
+ROCK_SMALL_TEXTURE_SCALE        = 1
+ROCK_SMALL_TEXTURE_ALPHA        = 255
+
+# target variables
+TARGET_DEFAULT_RADIUS           = 20
+TARGET_DEFAULT_X_INIT           = 1
+# default target
+TARGET_STANDARD_POINTS          = 1
+TARGET_STANDARD_COLOR_DARK      = arcade.color.BLIZZARD_BLUE
+TARGET_STANDARD_COLOR_LIGHT     = arcade.color.CARROT_ORANGE
+# strong target
+TARGET_STRONG_POINTS            = 3
+TARGET_STRONG_LIFE_INIT         = 3
+TARGET_STRONG_LIFE_TEXT_SIZE    = 20
+TARGET_STRONG_LIFE_TEXT_OFFSET  = -10
+TARGET_STRONG_COLOR_DARK        = arcade.color.LIGHT_CORAL
+TARGET_STRONG_COLOR_LIGHT       = arcade.color.BLIZZARD_BLUE
+TARGET_STRONG_LIFE_COLOR_DARK   = arcade.color.BLACK
+TARGET_STRONG_LIFE_COLOR_LIGHT  = arcade.color.DARK_GRAY
+# safe target
+TARGET_SAFE_POINTS              = -10
+TARGET_SAFE_SIDE_LENGTH         = TARGET_DEFAULT_RADIUS * 2
+TARGET_SAFE_TILT                = 0
+TARGET_SAFE_COLOR_LIGHT         = arcade.color.BLACK
+TARGET_SAFE_COLOR_DARK          = arcade.color.WHITE
+# meme guy target
+TARGET_MEME_GUY_IMAGE_SCALE     = 1 / 10
+TARGET_MEME_GUY_IMAGE_ANGLE     = 0
+TARGET_MEME_GUY_IMAGE_ALPHA     = 255
+
+# ball variables (pong)
+BALL_RADIUS                     = 10
+BALL_X_INIT                     = 50
+BALL_Y_INIT                     = random.randint(0, SCREEN_HEIGHT)
+BALL_DX_INIT                    = random.randint(1, 5)
+BALL_DY_INIT                    = random.randint(1, 5)
+# BALL_DRAW                       = arcade.draw_circle_filled
+BALL_COLOR_DARK                 = arcade.color.WHITE
+BALL_COLOR_LIGHT                = arcade.color.BLACK
+
+# paddle variables
+PADDLE_WIDTH                    = 10
+PADDLE_HEIGHT                   = 50
+PADDLE_X_INIT                   = SCREEN_WIDTH - 20
+PADDLE_Y_INIT                   = 150
+PADDLE_Y_MIN                    = 30
+PADDLE_Y_MAX                    = SCREEN_HEIGHT - 30
+# PADDLE_DRAW                     = arcade.draw_rectangle_filled
+PADDLE_COLOR_DARK               = arcade.color.WHITE
+PADDLE_COLOR_LIGHT              = arcade.color.BLACK
+
+# game state
+RESUME                          = 0
+PAUSE                           = 1
+MAIN_MENU                       = 2
+NEW_LEVEL                       = 4
+GAME_OVER                       = 5
+STATE_INIT                      = RESUME
+# STATE_INIT                      = MAIN_MENU
+
+# other variables
+MOVE_AMOUNT                     = 5
+DELAY_INIT                      = 5
+SCORE_HIT                       = 1
+SCORE_MISS                      = 5
+ALIVE                           = True
+DEAD                            = False
+DEBUG                           = False
+DARK_MODE_INIT                  = True
+PI_OVER_2                       = math.radians(90)

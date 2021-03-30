@@ -1,0 +1,22 @@
+Class: Score
+--------------------------------------------------
+Inherit: On_Screen_Text
+--------------------------------------------------
+Components:
++ score     : int
+--------------------------------------------------
+Properties:
++ score_text : string
+--------------------------------------------------
+Methods:
+Initialize
++ __init__(score_init  : int)
++ initialize_color()
+
+Draw
++ draw()
+
+Operators
++ __add__(rhs)
++ __iadd__(rhs)
+--------------------------------------------------

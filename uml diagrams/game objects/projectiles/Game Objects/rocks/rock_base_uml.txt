@@ -1,0 +1,38 @@
+Class: Rock (Base)
+--------------------------------------------------
+Inherit: Projectile class
+--------------------------------------------------
+Components:
+
+Rock Components
++ hit_pts   : number
+
+Rock draw() components
++ texture   : arcade.texture
++ scale     : number
++ rotation  : number
++ dr        : number
++ alpha     : number
+
+Projectile components respecified
++ radius    : number
++ center    : Point
++ v         : Velocity
+--------------------------------------------------
+Methods:
+
+Initialize
++ __init__( x_init: number
+            y_init: number)
++ initialize_center()
++ initilaize_velocity()
+
+Draw
++ draw()
+
+Advance
++ advance()
+
+Hit
++ hit()
+--------------------------------------------------

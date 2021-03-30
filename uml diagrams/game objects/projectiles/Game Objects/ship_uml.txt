@@ -1,0 +1,37 @@
+ship_uml.txt
+
+Class: Ship
+--------------------------------------------------
+Inherit: Projectile class
+--------------------------------------------------
+Components:
+
+Ship draw components
++ texture   : arcade.texture
++ scale     : number
++ angle     : number
++ alpha     : number
++ dark_mode : boolean
+
+Projectile components respecified
++ center    : Point
++ radius    : number
++ color     : arcade.color
++ dark_mode : boolean
+--------------------------------------------------
+Methods:
+
+Initialize
++ __init__( x_init: number
+            y_init: number)
+
+Rotate
++ rotate_left()
++ rotate_right()
+
+Accelerate
++ accelerate()
+
+Hit
++ hit()
+--------------------------------------------------

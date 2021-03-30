@@ -1,0 +1,46 @@
+
+Class: Velocity
+
+Components:
++ dx    // number
++ dy    // number
++ speed // number
++ angle // number
+
+--------------------------------------------------
+Methods:
+
+Initialize:
++ __init__(x_init=0
+           y_init=0)
+
+Getters / Setters
++ getDx()
++ getDy()
++ getSpeed()
++ getAngle()
+
++ setDx(dx: number)
++ setDy(dy: number)
++ setSpeed(speed: number)
++ setAngle(angle: number)
+
+Calculators
++ speed_to_velocity_degrees()
++ speed_to_velocity_radians()
++ velocity_to_speed()
++ velocity_to_angle()
+
+Adders
++ addDx(dx)
++ addDy(dy)
++ addAngle(dangle)
+
+Operators
++ __add__(rhs)
+
+Debug
++ display()
+// used by display:
++ get_velocity_info()
+--------------------------------------------------

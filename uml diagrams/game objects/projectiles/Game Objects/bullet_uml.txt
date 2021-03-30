@@ -1,0 +1,34 @@
+Class: Bullet
+--------------------------------------------------
+Inherit: Projectile class
+--------------------------------------------------
+Components:
+
+Bullet components
++ timer     : number
+
+Bullet draw() components
++ texture   : arcade.texture
++ scale     : number
++ angle     : number
++ alpha     : number
+
+Projectile Components respecified
++ radius    : number
++ center    : Point
++ v         : Velocity
+--------------------------------------------------
+Methods:
+
+Initialize
++ __init__()
+
+Fire
++ fire()
+
+Draw
++ draw()
+
+Advance
++ advance()
+--------------------------------------------------

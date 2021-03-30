@@ -1,0 +1,10 @@
+default1,0
+default2,0
+default3,0
+Elijah,2400
+Elijah,4200
+Elijah,8200
+Elijah,100
+elijah,320
+hi,0
+there,20

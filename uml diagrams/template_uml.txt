@@ -1,0 +1,21 @@
+Class: Class_Template_Child
+--------------------------------------------------
+Inherit: Class_Template_Parent class
+--------------------------------------------------
+Components:
++ center        : Point
++ radius        : number
++ color         : arcade.color (tuple)
++ dark_mode     : boolean
+--------------------------------------------------
+Methods:
+
+Initialize
++ __init__( x_init: number
+            y_init: number)
+
+Fire
+fire(   angle: number, 
+        ship_v: Velocity)
+
+--------------------------------------------------

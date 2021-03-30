@@ -1,0 +1,55 @@
+Class: Point
+----------------------------------
+Components:
++ x     : number
++ y     : number
+----------------------------------
+Methods:
+
+Initialize:
++ __init__(x_init=0, y_init=0)
+
+Adders:
++ addX    (dx: number)
++ addY    (dy: number)
++ addS    (ds: number)
++ addPoint(dp: Point)
+----------------------------------
+
+
+Class: Velocity
+----------------------------------
+Components:
+- dx            : number
+- dy            : number
+- angle_radians : number
++ calculator    : 
+    Velocity_Calculator
+----------------------------------
+Properties:
++ dx            : dx
++ dy            : dy
++ speed         : number
++ angle_degrees : number
++ angle_radians : number
+----------------------------------
+Methods:
+
+Initialize:
++ __init__(dx_init=0, dy_init=0)
+
+Setters:
++ set_dx_dy(dx, dy)
+
+Adders:
++ add_dx(ddx)
++ add_dy(ddy)
++ add_dx_dy(dv)
++ accelerate(d_speed)
++ add_angle_radians(d_angle)
++ add_angle_degrees(d_angle)
+
+Operators:
++ __add__(rhs)
++ __iadd__(rhs)
+----------------------------------

@@ -1,0 +1,45 @@
+Class: Projectile
+--------------------------------
+Components:
+- p             : Point
+- v             : Velocity
+- angle_radians : number
+- r             : number
++ isalive       : boolean
+- radius        : number
++ thrust        : boolean
++ timer         : number
+--------------------------------
+Properties:
++ center        : p
++ location      : p
++ velocity      : v
++ isalive       : angle_radians
++ angle         : r
++ rotation      : isalive
++ radius        : radius
+--------------------------------
+Methods:
+
+Initialize
++ __init__()
+
+Advance
++ advance()
+
+Draw
++ draw()
+
+Hit
++ hit()
+
+Getters / Setters
++ get_thrust()  
++ is_alive()    
+
++ set_thrust  (thrust)
++ set_alive   (isalive)
+
+Adders
++ add_rotation(dr)
+--------------------------------

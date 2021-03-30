@@ -1,0 +1,46 @@
+Class: Rock_Big
+--------------------------------------------------
+Inherit: Rock class
+--------------------------------------------------
+Components:
+
+Rock Components respecified
++ hit_pts   : number
+
+Rock draw() components respecified
++ texture   : arcade.texture
++ rotation  : number
++ dr        : number
+
+Projectile components respecified
++ radius    : number
++ center    : Point
++ v         : Velocity
+--------------------------------------------------
+Methods:
+
+Initialize
++ __init__( x_init: number
+            y_init: number)
++ initialize_center()
++ initilaize_velocity()
+--------------------------------------------------
+
+Class: Rock_Medium
+{Same UML as Rock_Big}
+
+Class: Rock_Small
+{Same UML as Rock_Big}
+
+Bonus Rocks: {Same UML}
+(must be found by revealing hint screen, 
+key to do so found on main menu screen, 
+and this hint screen will display the 
+necessary key to display each of these 
+bonus rocks)
+Class: Bob
+Class: Susan
+... more to be thought up
+(These rocks will literally be images of memes,
+I'll decide which ones I'll look up:)
+)

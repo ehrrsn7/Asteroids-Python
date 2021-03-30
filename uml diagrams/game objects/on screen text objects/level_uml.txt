@@ -1,0 +1,23 @@
+Class: Level
+--------------------------------------------------
+Inherit: On_Screen_Text
+--------------------------------------------------
+Components:
++ level     : int
+--------------------------------------------------
+Methods:
+Initialize
++ __init__(
+    text        : string
+    p           : Point
+    font_size   : int
+)
++ initialize_color()
+
+Draw
++ draw()
+
+Operators
++ __add__(rhs)
++ __iadd__(rhs)
+--------------------------------------------------
